@@ -80,6 +80,7 @@ public class Driver {
 		int size = 8;
 		while (true) {
 			input = user_input.next();// get user input
+			user_input.close();
 			if (input.equalsIgnoreCase("q")) {
 				System.exit(0);
 			} else if (input.equalsIgnoreCase("a")) {

@@ -4,10 +4,8 @@ package Project3;
 import aima.core.agent.Action;
 import aima.core.agent.impl.DynamicAction;
 
-import java.util.Arrays;
-import java.util.Random;
 
-import com.sun.tools.javac.code.Attribute.Array;
+
 
 /**
  * @author sammelnik
@@ -222,16 +220,16 @@ public class gameBoard {
 			board[X][Y] = '.';
 
 	}
-	private void findTeleport(char[][] board2) {
-		for(int i=0; i<7; i++){
-			for(int j=0; j<7; j++){
-				if(board2[i][j]=='D'){
-					X=i;
-					Y=j;
-				}
-			}
-		}
-	}
+//	private void findTeleport(char[][] board2) {
+//		for(int i=0; i<7; i++){
+//			for(int j=0; j<7; j++){
+//				if(board2[i][j]=='D'){
+//					X=i;
+//					Y=j;
+//				}
+//			}
+//		}
+//	}
 	public boolean canMove(Action a) {
 		
 		

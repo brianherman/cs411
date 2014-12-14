@@ -33,7 +33,7 @@ public class Driv3r {
 			System.out.print("Enter step limiter value: ");
 			int stepLimiterValue = keyboard.nextInt();
 			char [] initial = {'B', 'B', ' ','B','R','R','R'};
-
+			keyboard.close();
 			switch(choice){
 			case 1:
 				BFS(initial,stepLimiterValue);

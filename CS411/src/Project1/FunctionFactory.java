@@ -1,12 +1,8 @@
 package Project1;
 
-import java.util.Arrays;
 import java.util.LinkedHashSet;
 import java.util.Set;
-import java.util.TreeMap;
-
 import aima.core.agent.Action;
-import aima.core.agent.impl.DynamicAction;
 import aima.core.search.framework.ActionsFunction;
 import aima.core.search.framework.ResultFunction;
 import aima.core.search.framework.StepCostFunction;
@@ -58,8 +54,8 @@ public class FunctionFactory {
 		@Override
 		public double c(Object stateFrom, Action a, Object stateTo) {
 			double c = 0;
-			Puzzle x = new Puzzle((Puzzle) stateFrom);
-			Puzzle y = new Puzzle((Puzzle) stateTo);
+//			Puzzle x = new Puzzle((Puzzle) stateFrom);
+//			Puzzle y = new Puzzle((Puzzle) stateTo);
 			switch(a.toString()){
 			case ("left"):
 				c=1;
@@ -92,7 +88,7 @@ public class FunctionFactory {
 			//enumerate through all possible actions
 			int si = getSpaceIndex(board);
 			assert(si != -1);
-			if(board.canMove(board)){
+			if(Puzzle.canMove(board)){
 				actions.add(Puzzle.moveRight);
 				actions.add(Puzzle.moveLeft);
 				actions.add(Puzzle.moveRight2);
